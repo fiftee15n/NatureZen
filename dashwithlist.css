@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(n18.jpg);
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(2px);
+    box-sizing: border-box;
+    font-family: sans-serif;
+    min-height: 100vh;
+}
+.logo{
+    width: 100px;
+    cursor: pointer;
+    
+    
+}
+
+.content{
+    width: 100%;
+    position:absolute;
+    top: 40%;
+    text-align: center;
+    color: #fff;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+
+
+.Menu-bar{
+    background: rgb(39, 46, 39);
+    text-align: center;
+}
+
+.Menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+
+.Menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.Menu-bar ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.effect, .Menu-bar ul li:hover{
+    background: rgba(0, 255, 34, 0.432);
+    border-radius: 3px;
+    transition: .5s;
+    cursor: pointer;
+
+}
+
+.Menu-bar .fa{
+
+    margin-right: 8px;
+}
+
+.submenu-1{
+    display: none;
+
+}
+.Menu-bar ul li:hover .submenu-1{
+    display: block;
+    position:absolute ;
+    background: rgb(29, 49, 29);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.Menu-bar ul li:hover ,.submenu-1 ul{
+    display: block;
+    margin: 10px;
+}
+
+.Menu-bar ul li:hover .submenu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px solid #ffffff;
+    background: transparent;
+    border-radius: 0  ;
+    text-align: left;
+
+}
+.Menu-bar ul li:hover .submenu-1 ul li:last-child{
+    border-bottom: 1px solid #fff ;
+}
+.Menu-bar ul li:hover .submenu-1 ul li a:hover{
+    color: #fff ;
+}
+
+
+
+
+.categories{
+    margin:70px 0;
+}
+.col{
+    flex-basis: 30;
+    min-width: 250px;
+    margin-bottom:30px;
+    
+
+}
+.col img{
+    width: 100%;
+}
+
+

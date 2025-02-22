@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="logjava.css">
+</head>
+<body>
+    <div class="wrapper">
+        <form action="">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Username" >
+                <i class='bx bxs-user'></i>
+            </div>
+
+
+            <div class="input-box">
+                <input type="password" placeholder="Password" >
+                <i class='bx bx-lock'></i>
+            </div>
+
+
+            <div class="Remember-Forget">
+                <label>
+                    <input type="checkbox">Remember me
+                </label>
+                <a href="#">Forget Password
+                </a>
+            </div>
+            <div class="container">
+                <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+                <div class="popup" id="popup">
+                    <img src="404-tick.png" alt="">
+                    <h2>Logged In.</h2>
+                    <p>Your Details has been matched</p>
+                    <button type="button" onclick="closePopup()">OK</button>
+                </div>
+            </div>
+            
+            <div class="register-link">
+                <p> Dont have an account? <a href="#">Register</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script>
+
+        let popup = document.getElementById("popup");
+
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
+    </script>
+</body>
+</html>

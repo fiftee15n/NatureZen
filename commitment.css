@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+}
+
+.about{
+    height: 100vh;
+    width: 100%;
+    background: url(n17.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+.about .main img{
+
+    width: 580px;
+    max-width: 100%;
+    height: auto;
+    padding: 0 10px;
+    margin-right: 5%;
+
+}
+
+.all-text{
+
+    width: 600px;
+    max-width: 100%;
+    padding: 0 10px;
+    margin-left: 30%;
+}
+
+.main{
+
+    width: 1290px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center ;
+    justify-content: space-around;
+}
+
+.all-text h4{
+
+    font-family: sans-serif;
+    font-size: 18px;
+    color: black;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-right: 20%;
+}
+
+
+.all-text h1{
+
+    font-size: 65px;
+    color: black;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.all-text p{
+
+    font-family: sans-serif;
+    font-size: 16px;
+    color: black;
+    line-height: 30px;
+    margin-bottom: 35px;
+    width: 100%;
+
+
+}
+
+.button button{
+
+    background: white;
+    padding: 20px 32px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #111111;
+    border: #000000;
+    outline: 1px solid;
+    box-shadow: 0px 16px 32px 0px rgb(0 0 0 /6%);
+    margin-right: 20px;
+    
+
+}
+
+.button button:hover{
+
+    background-color: #000000;
+    color: white;
+    transition: .5s;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1250px){
+    .about{
+
+        width: 100%;
+        height: auto;
+        padding: 60px 0;
+    }
+    .all-text{
+
+        text-align: center;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 650px)
+{
+    .about .main img{
+
+        margin-bottom: 35px;
+    }
+
+    .all-text h1{
+        font-size: 45px;
+    }
+}

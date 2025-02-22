@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>natureZen</title>
+    <link rel="stylesheet" href="natureZen.css">
+</head>
+<body>
+    <div class="dashboard">
+        
+        
+        <div class="content">
+            <h1>NatureZen</h1>
+            <p>Ecology & Environment</p>
+
+            <button type="submit" class="btn" onclick="openPopup()">Explore more</button>
+            <div class="popup" id="popup">
+                <img src="404-tick.png" alt="">
+                <h2>Logged In.</h2>
+                <p>Your Details has been matched</p>
+                <button type="button" onclick="closePopup()"><a href="dashwithlist.html"></a>OK</button>
+            </div>
+        </div>
+
+   
+
+
+
+    </div>
+
+
+    <script>
+
+        let popup = document.getElementById("popup");
+
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
+    </script>
+</body>
+</html>
